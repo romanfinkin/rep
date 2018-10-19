@@ -89,131 +89,263 @@ for i in range(9):
         break
     else:
         prnt()
-        x = int(input('Enter number of line '))
-        y = int(input('Enter number of column '))
         if player % 2 == 1:
-            if x == 1:
-                if y == 1:
-                    if list_1[2] == ' ':
-                        list_1[2] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 2:
-                    if list_1[4] == ' ':
-                        list_1[4] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 3:
-                    if list_1[6] == ' ':
-                        list_1[6] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                player += 1
-            elif x == 2:
-                if y == 1:
-                    if list_2[2] == ' ':
-                        list_2[2] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 2:
-                    if list_2[4] == ' ':
-                        list_2[4] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 3:
-                    if list_2[6] == ' ':
-                        list_2[6] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                player += 1
-            elif x == 3:
-                if y == 1:
-                    if list_3[2] == ' ':
-                        list_3[2] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 2:
-                    if list_3[4] == ' ':
-                        list_3[4] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 3:
-                    if list_3[6] == ' ':
-                        list_3[6] = 'X'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                player += 1
-            else:
-                print('Wrong number, try again ')
-        elif player % 2 == 0:
-            if x == 1:
-                if y == 1:
-                    if list_1[2] == ' ':
-                        list_1[2] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 2:
-                    if list_1[4] == ' ':
-                        list_1[4] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 3:
-                    if list_1[6] == ' ':
-                        list_1[6] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                player += 1
-            elif x == 2:
-                if y == 1:
-                    if list_2[2] == ' ':
-                        list_2[2] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 2:
-                    if list_2[4] == ' ':
-                        list_2[4] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 3:
-                    if list_2[6] == ' ':
-                        list_2[6] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                player += 1
-            elif x == 3:
-                if y == 1:
-                    if list_3[2] == ' ':
-                        list_3[2] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 2:
-                    if list_3[4] == ' ':
-                        list_3[4] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                if y == 3:
-                    if list_3[6] == ' ':
-                        list_3[6] = 'O'
-                    else:
-                        print('Cell busy')
-                        player -= 1
-                player += 1
-            else:
-                print('Wrong number, try again ')
+            print('Player 1')
+            x = int(input('Enter number of line '))
+            y = int(input('Enter number of column '))
+            if player % 2 == 1:
+                if x == 1:
+                    if y == 1:
+                        if list_1[2] == ' ':
+                            list_1[2] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_1[4] == ' ':
+                            list_1[4] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_1[6] == ' ':
+                            list_1[6] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 2:
+                    if y == 1:
+                        if list_2[2] == ' ':
+                            list_2[2] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_2[4] == ' ':
+                            list_2[4] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_2[6] == ' ':
+                            list_2[6] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 3:
+                    if y == 1:
+                        if list_3[2] == ' ':
+                            list_3[2] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_3[4] == ' ':
+                            list_3[4] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_3[6] == ' ':
+                            list_3[6] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                else:
+                    print('Wrong number, try again ')
+            elif player % 2 == 0:
+                if x == 1:
+                    if y == 1:
+                        if list_1[2] == ' ':
+                            list_1[2] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_1[4] == ' ':
+                            list_1[4] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_1[6] == ' ':
+                            list_1[6] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 2:
+                    if y == 1:
+                        if list_2[2] == ' ':
+                            list_2[2] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_2[4] == ' ':
+                            list_2[4] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_2[6] == ' ':
+                            list_2[6] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 3:
+                    if y == 1:
+                        if list_3[2] == ' ':
+                            list_3[2] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_3[4] == ' ':
+                            list_3[4] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_3[6] == ' ':
+                            list_3[6] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                else:
+                    print('Wrong number, try again ')
+        else:
+            print('Player 2')
+            x = int(input('Enter number of line '))
+            y = int(input('Enter number of column '))
+            if player % 2 == 1:
+                if x == 1:
+                    if y == 1:
+                        if list_1[2] == ' ':
+                            list_1[2] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_1[4] == ' ':
+                            list_1[4] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_1[6] == ' ':
+                            list_1[6] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 2:
+                    if y == 1:
+                        if list_2[2] == ' ':
+                            list_2[2] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_2[4] == ' ':
+                            list_2[4] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_2[6] == ' ':
+                            list_2[6] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 3:
+                    if y == 1:
+                        if list_3[2] == ' ':
+                            list_3[2] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_3[4] == ' ':
+                            list_3[4] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_3[6] == ' ':
+                            list_3[6] = 'X'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                else:
+                    print('Wrong number, try again ')
+            elif player % 2 == 0:
+                if x == 1:
+                    if y == 1:
+                        if list_1[2] == ' ':
+                            list_1[2] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_1[4] == ' ':
+                            list_1[4] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_1[6] == ' ':
+                            list_1[6] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 2:
+                    if y == 1:
+                        if list_2[2] == ' ':
+                            list_2[2] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_2[4] == ' ':
+                            list_2[4] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_2[6] == ' ':
+                            list_2[6] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                elif x == 3:
+                    if y == 1:
+                        if list_3[2] == ' ':
+                            list_3[2] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 2:
+                        if list_3[4] == ' ':
+                            list_3[4] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    if y == 3:
+                        if list_3[6] == ' ':
+                            list_3[6] = 'O'
+                        else:
+                            print('Cell busy')
+                            player -= 1
+                    player += 1
+                else:
+                    print('Wrong number, try again ')
