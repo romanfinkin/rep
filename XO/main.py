@@ -348,4 +348,4 @@ for i in range(9):
                             player -= 1
                     player += 1
                 else:
-                    print('Wrong number, try again ')
+                    print('Wrong number, try again! ')
