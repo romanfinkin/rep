@@ -57,35 +57,35 @@ for i in range(9):
 
     if list_1[2] == list_1[4] == list_1[6] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     elif list_2[2] == list_2[4] == list_2[6] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     elif list_3[2] == list_3[4] == list_3[6] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     elif list_1[2] == list_1[2] == list_3[2] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     elif list_1[4] == list_2[4] == list_3[4] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     elif list_1[6] == list_2[6] == list_3[6] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     elif list_1[2] == list_2[4] == list_3[6] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     elif list_1[6] == list_2[4] == list_3[2] == 'O':
         prnt()
-        print('X just Win!!!')
+        print('O just Win!!!')
         break
     else:
         prnt()

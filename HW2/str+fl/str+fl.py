@@ -45,5 +45,4 @@ for i in text:
         k += 1
         if k > j // 2:
             fwr.write(i)
-
 fwr.close()
