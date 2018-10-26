@@ -7,3 +7,4 @@ def print_field(field):
     print('| %s |' % ' | '.join(field[2]))
     print('+---+---+---+')
 
+Признаюсь, украдено)
