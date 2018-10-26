@@ -29,4 +29,3 @@ for i in range(9):
     make_tur.make_turn(data, x, y, value)
     if check_fiel.check_field(data, value) == True:
         break
-
