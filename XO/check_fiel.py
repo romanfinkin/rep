@@ -13,4 +13,4 @@ def check_field(field, value):
     if field[0][0] == field[1][1] == field[2][2] == value != ' ' or field[0][2] == field[1][1] == field[2][0] != ' ':
         print('%s Wins' % value)
         result = True
-    return result
+    return result  # обращай внимание на предупреждения PEP8

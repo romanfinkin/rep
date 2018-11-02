@@ -13,6 +13,7 @@ mm = int(bdl[1])
 yyyy = int(bdl[2])
 
 
+# тут можно было использовать calendar.day_name
 if calendar.weekday(yyyy, mm, dd) == 0:
     print("It's MONDAY")
 elif calendar.weekday(yyyy, mm, dd) == 1:

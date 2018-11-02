@@ -28,4 +28,5 @@ for i in range(9):
             y = int(input('Enter number of column '))
     make_tur.make_turn(data, x, y, value)
     if check_fiel.check_field(data, value) == True:
+        # вывел бы хоть сообщение о том, кто победил :)
         break
