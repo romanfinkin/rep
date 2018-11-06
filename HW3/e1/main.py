@@ -50,7 +50,7 @@ def simples(x):
 reducers = {'sum': lambda x, y: x + y, 'multiply': lambda x, y: x * y, 'join': join, 'union': union,
             'reverse': reverse}
 mappers = {'negated': lambda x: -x, 'inverted': lambda x: 1 / x, 'squared': lambda x: x * x}
-predicates = {'evens': lambda x: x % 2, 'odds': lambda x: (x % 2) == 1, 'simples': simples}
+predicates = {'evens': lambda x: x % 2 == 0, 'odds': lambda x: (x % 2) == 1, 'simples': simples}
 
 while True:
     try:
