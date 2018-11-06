@@ -44,9 +44,6 @@ def reverse(x, y):
     return rev_seq
 
 
-gen = set()
-
-
 def evens(seq: list):
     for x in seq:
         if x % 2 == 0:
