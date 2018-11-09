@@ -1,5 +1,5 @@
-from functools import reduce
 import random
+from functools import reduce
 
 while True:
     try:
