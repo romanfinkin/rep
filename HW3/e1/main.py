@@ -1,5 +1,5 @@
-from functools import reduce
 import random
+from functools import reduce
 
 while True:
     try:
@@ -58,7 +58,7 @@ while True:
         print('2. negated, inverted, squared')
         print('3. odds, evens, simple')
         print('')
-        operation = str(input())
+        operation = input()
         oper1, oper2, oper3 = operation.split()
         reducer = reducers[oper1]
         mapper = mappers[oper2]
